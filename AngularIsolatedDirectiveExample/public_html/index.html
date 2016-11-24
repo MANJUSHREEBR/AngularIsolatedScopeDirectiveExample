@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html ng-app="myApp">
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       
+    </head>
+    <body ng-controller="mainCtrl">
+      <color-div show-txtfield="showTxtfield" change-color="change1" model-value="bgClr"></color-div>
+      <color-div show-clrfield="clrfield" change-color="change2" model-value="bgClr1"></color-div>
+      <color-div  change-color="change3" model-value="bgClr2"></color-div>
+      
+    <script src="app.js"></script>
+    <script src="directives/color-div.js"></script>
+    <script src="controllers/mainCtrl.js"></script>
+    <script src="factories/colorFactory.js"></script>
+    </body>
+  
+ </html>
