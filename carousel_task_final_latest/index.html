@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+
+        <link href="style.css" rel="stylesheet">  
+    </head>
+    <body>
+        <div ng-controller="CarouselDemoCtrl" id="slides_control">
+           <carousel-slide slide-array="slides" image-display="imageDisplay"></carousel-slide>
+           <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-4">
+                    <img ng-show="displayImage" ng-src="{{imgShow}}" class="img-thumbnail" alt="Cinque Terre" width="304" height="236" style=""> 
+                </div>
+            </div>
+            </div>
+            
+        <script src="app.js"></script>
+        <script src="controllers/mainCtrl.js"></script>
+        <script src="directives/carousel-slide.js"></script>
+
+    </body>
+</html>
+
